@@ -1,12 +1,10 @@
 # See docs at: https://mystmd.org/guide/frontmatter
 version: 1
 project:
-  id: cf28f878-37b2-403e-90b5-699392a29eb9
-  title: Python
-  description: Vorlesungsskript für die Vorlesung Python an der TH Mannheim
-  keywords: ["Python"]
+  title: Angewandte Numerik im Maschinenbau
+  description: Vorlesungsskript für die Vorlesung ANM (deutsch) an der TH Mannheim
   authors: ["Simone Gramsch"]
-  github: https://github.com/gramschs/thma_python
+  github: https://github.com/gramschs/thm_anm_de
   license: CC-BY-NC-SA-4.0
   open_access: true
 
@@ -21,6 +19,7 @@ project:
     - title: Numerische Analysis
       children:
       - file: chapter04/chapter04_sec01.md
+      - file: chapter04/chapter04_sec02.md
     
 site:
   template: book-theme

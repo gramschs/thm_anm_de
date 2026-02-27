@@ -29,3 +29,29 @@ div.myst-code {
   text-align: center;
 }
 
+
+#applet-container-720 { --applet-height: 720px; }
+#applet-container-750 { --applet-height: 750px; }
+
+/* Mittlerer div: Zentrierung und Breite aufheben */
+[id^="applet-container-"] > div {
+  text-align: left !important;
+  width: 100% !important;
+}
+
+/* Innerer div: Seitenverhältnis-Trick deaktivieren, feste Höhe setzen */
+[id^="applet-container-"] .relative.inline-block {
+  padding-bottom: 0 !important;
+  width: 100% !important;
+  height: var(--applet-height) !important;
+  position: relative !important;
+}
+
+/* iframe: absolute Positionierung beibehalten, aber volle Größe */
+[id^="applet-container-"] .relative.inline-block > iframe {
+  position: absolute !important;
+  top: 0 !important;
+  left: 0 !important;
+  width: 100% !important;
+  height: 100% !important;
+}
